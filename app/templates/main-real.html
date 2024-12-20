@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="/static/css/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+    <div class="slider">
+        <button class="prev" onclick="moveSlide(-1)">❮</button>
+        <div class="slides">
+            <img src="{{ url_for('static', filename='img/фото.jpg') }}" alt="Slide 1">
+            <img src="{{ url_for('static', filename='img/фото2.jpg') }}" alt="Slide 2">
+            <img src="{{ url_for('static', filename='img/фото2.jpg') }}" alt="Slide 3">
+        </div>
+        <button class="next" onclick="moveSlide(1)">❯</button>
+    </div>
+
+    <script src="/static/js/script.js"></script>
+
+</body>
+</html>
+
